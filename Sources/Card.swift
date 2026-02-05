@@ -3,7 +3,7 @@
 
 import Foundation
 
-// 1. ENUMS (1 point)
+// 1. ENUMS
 // Code fourni - Décommenter et compléter
 
 enum Suit: String, CaseIterable {
@@ -16,26 +16,39 @@ enum Suit: String, CaseIterable {
 enum Rank: Int, CaseIterable, Comparable {
     case two = 2, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace
 
-    // TODO: Ajouter computed property name qui retourne "2", "3", ..., "Jack", "Queen", "King", "Ace"
+    var name: String {
+        switch self {
+        case .two: return "2"
+        case .three: return "3"
+        case .four: return "4"
+        case .five: return "5"
+        case .six: return "6"
+        case .seven: return "7"
+        case .eight: return "8"
+        case .nine: return "9"
+        case .ten: return "10"
+        case .jack: return "Jack"
+        case .queen: return "Queen Maurane"
+        case .king: return "King"
+        case .ace: return "Ace"
+        }
+    }
 
     static func < (lhs: Rank, rhs: Rank) -> Bool {
         return lhs.rawValue < rhs.rawValue
     }
 }
 
-// 2. STRUCT CARD (2 points)
-// TODO: Implémenter la structure Card
+// 2. STRUCT CARD
+struct Card: Comparable {
+    let rank: Rank
+    let suit: Suit
 
-// struct Card: Comparable {
-//     // TODO: Ajouter les propriétés rank et suit
-//
-//     // TODO: Computed property description qui retourne "Ace of ♠️"
-//     var description: String {
-//         return ""
-//     }
-//
-//     // TODO: Implémenter Comparable (comparer par rank)
-//     static func < (lhs: Card, rhs: Card) -> Bool {
-//         return false
-//     }
-// }
+    var description: String {
+        "\(rank.name) of \(suit.rawValue)"
+    }
+
+    static func < (lhs: Card, rhs: Card) -> Bool {
+        lhs.rank < rhs.rank
+    }
+}
