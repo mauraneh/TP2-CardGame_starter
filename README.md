@@ -157,35 +157,35 @@ Card Game: War
 =================
 
 Dealing cards...
-Sascha received 26 cards
+Maurane received 26 cards
 Bob received 26 cards
 
 --- Round 1 ---
-Sascha plays: 7 of ♥
+Maurane plays: 7 of ♥
 Bob plays: Queen of ♠
 Bob wins this round!
-Score: Sascha 0 - Bob 1
+Score: Maurane 0 - Bob 1
 
 --- Round 2 ---
-Sascha plays: Ace of ♦
+Maurane plays: Ace of ♦
 Bob plays: King of ♣
-Sascha wins this round!
-Score: Sascha 1 - Bob 1
+Maurane wins this round!
+Score: Maurane 1 - Bob 1
 
 --- Round 3 ---
-Sascha plays: 5 of ♥
+Maurane plays: 5 of ♥
 Bob plays: 5 of ♠
 War! Each player plays 3 cards...
-Sascha plays: Jack of ♦
+Maurane plays: Jack of ♦
 Bob plays: 9 of ♣
-Sascha wins the war!
-Score: Sascha 2 - Bob 1
+Maurane wins the war!
+Score: Maurane 2 - Bob 1
 
 ...
 
 === GAME OVER ===
 Winner: Bob with 28 points!
-Final score: Sascha 24 - Bob 28
+Final score: Maurane 24 - Bob 28
 ```
 
 ## Méthode de travail
