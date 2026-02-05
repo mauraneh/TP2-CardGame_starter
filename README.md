@@ -1,4 +1,4 @@
-# TP2 - Card Game System
+# TP2 - Card Game System - Maurane Hugon
 
 ## Objectif
 
